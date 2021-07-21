@@ -1,0 +1,154 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'About'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-white header-small")
+  +menu()
+  section.about-inner
+    .about-inner__main(style="background: url(./assets/img/about/bg.jpg) no-repeat center / cover")
+      .container
+        h1.h1-title.about-inner__main-title Our Story
+        .about-inner__main-info
+          h2.about-inner__main-middletitle Achieving the <br>impossible
+          .about-inner__main-leader.--flex.--aicn
+            .about-inner__main-avatar
+              img(src="./assets/img/about/avatar.png", alt="")
+            .about-inner__main-blockquote Sheikh Jabor Bin Mansour Al Thani
+        .about-inner__main-list.--flex.--jcsb
+          .about-inner__main-item
+            h4.about-inner__main-smalltitle Vision 
+            p.about-inner__main-text To make JMJ one of the most diversified and well known brands in the world by offering the exceptional value and the quality to customers.
+          .about-inner__main-item
+            h4.about-inner__main-smalltitle Mission
+            p.about-inner__main-text JMJ drives a culture of innovation an success within the group. We look to achieve the impossible through our people, our processes and our values.
+          .about-inner__main-item
+            h4.about-inner__main-smalltitle Overview
+            p.about-inner__main-text We aim to create value for our investors by executing our strategy sustainably, delivering results and communicating our performance transparently.
+    .about-inner-content 
+      .container 
+        .about-inner-image-block.--flex.--jcsb
+          .about-inner-info
+            h3 JMJ Group
+            .title__description Our Story
+            .about-inner-info-textblock
+              p.medium-text  JMJ Group is a Group of Companies under the stewardship of Sheikh Jabor Bin Mansour Bin Jabor Bin Jassim Al Thani. The Group consists of 40+ businesses across a variety of sectors ensuring ethical and compliant operations in the state of Qatar. 
+              p.medium-text JMJ have created a community of businesses providing great collaboration opportunities, intelligence insights and economies of scale opportunities aligned with vision of H.H. The Emir, Sheikh Tamim Bin Hamad Al-Thani.
+            p.text We look forward to continuing our unwavering support to help Qatar continue its astonishing growth and development!
+          .about-inner-image
+            img(src="./assets/img/about/pic.jpg", alt="")
+          .grey-title.parallax.p-5.--parrlax-mobile.grey-title--right
+            span heritage
+          .grey-title__line
+        .about-inner__timeline-container
+          .about-inner__timeline-wrap
+            .about-inner__timeline
+              .timeline-left(style="margin-top: 120px;")
+                .timeline__item.mobile-visible
+                  .timeline__year 2020
+                  .timeline__text JMJ drives a culture of innovation an success within the group.
+              .timeline-right(style="margin-top: -20px;")
+                .timeline__item.mobile-visible
+                  .timeline__year 2021
+                  .timeline__text JMJ drives a culture of innovation an success within the group. We look to achieve the impossible through our people, our processes and our values.
+              .timeline-left(style="margin-top: 165px;")
+                .timeline__item
+                  .timeline__year 2019
+                  .timeline__text JMJ drives a culture of innovation an success within the group.
+              .timeline-right(style="margin-top: 110px;")
+                .timeline__item
+                  .timeline__year 2019
+                  .timeline__text JMJ drives a culture of innovation an success within the group. We look to achieve the impossible.
+              .timeline-left
+              .timeline-right(style="margin-top: 90px;")
+                .timeline__item
+                  .timeline__year 2018
+                  .timeline__text JMJ drives a culture of innovation an success within the group. We look to achieve the impossible.
+              .timeline-left
+                .timeline__item.timline-prev
+                  .timeline__pic
+                    img(src="./assets/img/about/timeline-1.jpg", alt="")
+                  .timeline__year 2008
+                  .timeline__text JMJ drives a culture of innovation an success within the group.
+              .timeline-right(style="margin-top: 120px;")
+                .timeline__item
+                  .timeline__pic
+                  .timeline__year 2010
+                  .timeline__text JMJ drives a culture of innovation an success within the group. We look to achieve the impossible.
+              .timeline-left
+              .timeline-right
+                .timeline__item
+                  .timeline__pic
+                    img(src="./assets/img/about/timeline-2.jpg", alt="")
+                  .timeline__year 2007 
+                  .timeline__text JMJ drives a culture of innovation an success within the group. We look to achieve the impossible through our people, our processes and our values.
+        .about-inner__investor
+          h3 Investor Relations
+          .title__description Key Goals
+          .about-inner__investor-text.--flex.--jcsb 
+            p.medium-text We are conscious of the great deal of trust that our investors put in us when they purchase shares, as well as the responsibility that comes with it. We aim to live up to this responsibility with the utmost transparency. The aim of all these measures is to keep investors and capital market participants informed about
+            p.medium-text the development of the company and its portfolio companies. Sound research by analysts from Hauck & Aufhäuser and Pareto reaches an international and broad circle of existing and potential new investors.
+          .about-inner__investor-chart.chart
+            .chart__description Projects
+            p.text.chart__text JMJ drives a culture of innovation an success within the group. We look to achieve the impossible through our people, our processes and our values.
+            .chart__pic
+              picture
+                source(srcset="./assets/img/about/chart-mobile.png" media="(max-width: 700px)") 
+                img(src="./assets/img/about/chart.png", alt="")
+            .grey-title.parallax.p-5.--parrlax-mobile.grey-title--right
+              span success
+            .grey-title__line
+        .about-inner__stats.--flex.--jcsb
+          .about-inner__stats-item
+            .about-inner__stats-number 12
+            .about-inner__stats-description Years
+            p.about-inner__stats-text.text To make JMJ one of the most diversified and well known brands in the world by offering the exceptional value and the quality to customers.
+          .about-inner__stats-item
+            .about-inner__stats-number 23 
+            .about-inner__stats-description Companies
+            p.about-inner__stats-text.text To make JMJ one of the most diversified and well known brands in the world by offering the exceptional value and the quality to customers.
+          .about-inner__stats-item
+            .about-inner__stats-number 1,500 
+            .about-inner__stats-description Projects
+            p.about-inner__stats-text.text To make JMJ one of the most diversified and well known brands in the world by offering the exceptional value and the quality to customers.
+  section.mailblock 
+    .container 
+      .darkblock 
+        h2.darkblock__title Want to become a partner?
+        a.mailblock__link(href="#") 
+          | Contact Us
+          img(src="./assets/img/icons/mail.svg", alt="")
+      .mailblock__circle-1.parallax.p-5.--parrlax-mobile
+      .mailblock__circle-2.parallax.p-5
+      .mailblock__circle-3.parallax.p-5.--parrlax-mobile
+      .mailblock__line
+  section.companies
+    .container 
+      h3.companies__title Our Companies
+      .companies__list-wrap
+        .swiper-container
+          .swiper-wrapper
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-1.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-2.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-3.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-4.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-5.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-1.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-2.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-3.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-4.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-5.png", alt="")
+      .companies__link.--flex.--jcfe
+        +linkarrow('View All Companies')
+      .companies__line

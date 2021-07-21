@@ -1,0 +1,263 @@
+html{
+  font-size: 10px;
+  @media(max-width: 980px){
+    font-size: 9px;
+  }
+}
+.body {
+    background: $color-bg;
+    color: $color-text;
+
+    font-family: $font-family;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+    scroll-behavior: smooth;
+
+    &._frozen {
+        overflow: hidden;
+        height: 100%;
+    }
+
+}
+
+.container {
+  max-width: 1280px;
+  padding-left: 30px; 
+  padding-right: 30px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 50;
+}
+
+@if $enable-grid-classes {
+    .row {
+        @include make-row();
+
+        >* {
+            @include make-col-ready();
+        }
+    }
+    @include make-grid-columns();
+}
+
+.hidden {
+    display: none;
+}
+
+
+.content{
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    &-nowrap {
+        white-space: nowrap;
+    }
+
+    &-muted {
+        color: rgba($color-text, .5);
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+}
+
+.color-primary {
+    color: $color-primary !important;
+}
+
+.color-secondary {
+    color: $color-secondary !important;
+}
+
+a,
+.link {
+    cursor: pointer;
+    color: $link-color;
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+::placeholder {
+    color: rgba($color-text, .5);
+}
+
+:focus::placeholder {
+    opacity: 1;
+}
+
+.necessaty_fields {
+    display: none !important;
+}
+
+.ios-fixed {
+    @include media-breakpoint-down(sm) {
+        position: fixed;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.lazyload {
+    visibility: hidden;
+}
+
+.fancybox-navigation {
+    position: static;
+}
+
+
+h1{
+    font-family: $ph;
+    font-size: 7.2rem;
+    line-height: 8.1rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 50;
+}
+
+.main h1{
+    font-weight: 900;
+}
+
+.h1-title{
+    font-size: 15.6rem;
+    line-height: 20rem;
+    margin-bottom: 14.5rem;
+    display: inline-block;
+    position: relative;
+    padding-top: 4.5rem;
+    &::after{
+        content: "";
+        position: absolute;
+        right: -2rem;
+        top: 16.5rem;
+        transform: translateX(50%);
+        width: 241px;
+        height: 2px;
+        background-color: #A7A7AD;
+    }
+}
+
+@media(max-width: 980px){
+    .h1-title{
+        font-size: 100px;
+    }
+}
+
+@media(max-width: 768px){
+    .h1-title{
+        font-size: 50px;
+        line-height: 65px;
+        padding-left: 0px;
+        margin-bottom: 64px;
+        padding-top: 0px;
+    }
+    .h1-title::after{
+        top: 79px;
+        height: 1px;
+        width: 115px;
+    }
+}
+
+h2{
+    font-family: $ph;
+    font-size: 7.2rem;
+    line-height: 8.1rem;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    position: relative;
+    z-index: 50;
+    margin-bottom: 6rem;
+}
+
+
+h3.undertitle{
+    font-family: $ph;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    letter-spacing: 0.15rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 50;
+}
+
+h3{
+    font-family: $ph;
+    font-weight: bold;
+    font-size: 4.3rem;
+    line-height: 55px;
+    letter-spacing: 1.74826px;
+    margin-bottom: 3.2rem;
+    position: relative;
+    z-index: 50;
+}
+
+
+@media(max-width: 768px){
+    h3{
+        letter-spacing: 0;
+    }
+}
+
+h4{
+    font-family: $ph;
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    margin-bottom: 2.4rem;
+    position: relative;
+    z-index: 50;
+    letter-spacing: 0.422121px;
+}
+
+.title__description{
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    margin-bottom: 8.2rem;
+    color: $grey;
+    font-family: $cs;
+    position: relative;
+    z-index: 50;
+}
+
+.text{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.211061px;
+    font-family: $pt;
+    position: relative;
+    z-index: 50;
+}
+
+.medium-text{
+    font-family: $pt;
+    font-size: 2.4rem;
+    line-height: 4.1rem;
+    margin-bottom: 16rem;
+    position: relative;
+    z-index: 50;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent;
+}
+
+
+
+@media(max-width: 980px){
+    .h1-title{
+        line-height: 13rem;
+        padding-left: 0px;
+    }
+}

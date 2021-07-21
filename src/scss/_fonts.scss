@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Publico Headline';
+  src: url('./fonts/PublicoHeadline-Bold.woff2') format('woff2'),
+      url('./fonts/PublicoHeadline-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Publico Headline';
+  src: url('./fonts/PublicoHeadline-Black.woff2') format('woff2'),
+      url('./fonts/PublicoHeadline-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calluna Sans';
+  src: url('./fonts/CallunaSans-Regular.woff2') format('woff2'),
+      url('./fonts/CallunaSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('./fonts/PTSans-Bold.woff2') format('woff2'),
+      url('./fonts/PTSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('./fonts/PTSans-Regular.woff2') format('woff2'),
+      url('./fonts/PTSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

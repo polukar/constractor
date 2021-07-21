@@ -1,0 +1,51 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Контакты'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-white header-small")
+  +menu()
+  section.contacts 
+    .container 
+      h1.contacts__title.h1-title.parallax.p-5 Contact Us
+      .contacts__list.--flex.--jcsb
+        .contacts__left
+          form.contacts__form
+            h3.contacts__form-title Drop Us a Line
+            .contacts__form-description.title__description 
+              | Please fill all the fields marked with asterisk 
+              span *
+            fieldset.form__block
+              p.form__description Your Full Name <span>*</span>
+              input.input(type="text" placeholder="Name")
+              .input-error
+            .form__group.--flex.--jcsb 
+              fieldset.form__block.--phone
+                p.form__description Phone <span>*</span>
+                input.input.js-mask__tel(type="tel" placeholder="+7 999 999 99 99")
+                .input-error
+              fieldset.form__block.--email
+                p.form__description Email
+                input.input(type="email" placeholder="example@gmail.com")
+            fieldset.form__block.--error
+              p.form__description Your Message <span>*</span>
+              .textarea__wrap 
+                textarea.textarea(name="text" placeholder="Example message" maxlength="160")
+                .textarea-symbols
+                  spam.textarea-symbols__number 160 
+                  span  symbols
+              .input-error Message Field can not be empty
+            button.submit Submit
+            p.submit__description By submitting, you are agreeing to our <a href="#">Terms & Conditions</a>
+        .contacts__item.contacts__right
+          .contcts__info
+            .contacts__map
+                #map.map
+            .contacts__details 
+              h4 Visit Our Office
+              p.contacts__detail Marina Twin  <br>Towers 303, Lusail, Qatar
+              .contacts__detail
+                p +974 3000 0044
+                a(href="mailto:info@jmj.qa") info@jmj.qa
+              a.contacts__getdirection(href="#") Get Directions

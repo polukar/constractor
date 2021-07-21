@@ -1,0 +1,30 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Контакты'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-white header-small")
+  +menu()
+  section.contacts 
+    .container 
+      h1.contacts__title.h1-title.parallax.p-5 Contact Us
+      .contacts__list.--flex.--jcsb
+        .contacts__left
+          .form__succes
+            h3.contacts__form-title You successfully <br>submitted your message.
+            .contacts__form-description.title__description Our Support Team will contact you soon.
+            .contacts__succes-ico
+              img(src="./assets/img/form-white-check.svg", alt="")
+          +linkarrow-white('Go to the Homepage')
+        .contacts__item.contacts__right
+          .contcts__info
+            .contacts__map
+                #map.map
+            .contacts__details 
+              h4 Visit Our Office
+              p.contacts__detail Marina Twin <br>Towers 303, Lusail, Qatar
+              .contacts__detail
+                p +974 3000 0044
+                a(href="mailto:info@jmj.qa") info@jmj.qa
+              a.contacts__getdirection(href="#") Get Directions

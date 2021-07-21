@@ -1,0 +1,330 @@
+.leadership-sesction-top{
+  padding-top: 20rem;
+  .leadership__text{
+    margin-bottom: 4.5rem;
+  }
+  .title__description{
+    margin-bottom: 8rem;
+  }
+  h3.leadership-sesction__title{
+    margin-bottom: 2.8rem;
+  }
+}
+
+.leadership-sesction{
+  margin-bottom: 23rem;
+  .grey-title{
+    right: 0;
+    bottom: auto;
+    top: 0;
+  }
+  .companies__wrap {
+    position: relative;
+    z-index: 55;
+  }
+}
+
+.leadership-sesction__main-left{
+  width: 48%;
+  img{
+    width: 100%;
+  }
+}
+
+.leadership-sesction__main-right{
+  width: 52%;
+  padding-left: 6rem;
+}
+
+
+.leadership-sesction__photo{
+  width: 100%;
+  overflow: hidden;
+}
+
+.leadership-sesction__social {
+  padding-top: 2rem;
+}
+
+
+.leadership-sesction{
+  .company{
+    width: calc(50% - 43px);
+    margin-right: 0px;
+    border: none;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 241px;
+      height: 2px;
+      background-color: #A7A7AD;
+    }
+  }
+  .company__pic{
+    height: 452px;
+    margin-bottom: 3.8rem;
+  }
+  .company__title {
+    margin-bottom: 1.1rem;  
+  }
+  .company__description{
+    margin-bottom: 0px;
+  }
+  .company__text-block{
+    max-width: 38rem;
+    margin-bottom: 0;
+  }
+  h3{
+    margin-bottom: 5.4rem;
+  }
+}
+
+
+.company__description.company__description--small{
+  margin-bottom: 3.4rem;
+  font-size: 2rem;
+  color: #D7D7DA;
+}
+
+.directors{
+  .company{
+    width: calc(33% - 15px);
+    max-width: 31.6rem;
+  }
+  .company__pic{
+    height: 45rem;
+  }
+}
+
+.management{
+  .company{
+    width: calc(25% - 23px);
+    max-width: 31.6rem;
+  }
+  .company__pic{
+    height: 30rem;
+  }
+}
+
+
+.executives{
+  .grey-title{
+    right: -38rem;
+    top: 40rem;
+  }
+  .grey-title__line{
+    bottom: auto;
+    right: -9px;
+    top: 0;
+  }
+}
+
+.directors{
+  .grey-title{
+    right: -35rem;
+    top: 40rem;
+  }
+  .grey-title__line{
+    bottom: auto;
+    right: -9px;
+    top: 0;
+  }
+}
+
+.management{
+  .grey-title{
+    right: -35rem;
+  }
+  .grey-title__line{
+    bottom: auto;
+    right: -9px;
+    top: 0;
+  }
+}
+
+
+
+@media(max-width: 980px){
+  .leadership-sesction-top{
+    padding-top: 100px;
+    .h1-title:after{
+      top: 40px;
+      right: 17px;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .leadership-sesction__main-left{
+    width: 262px;
+    margin-bottom: 32px;
+    margin-left: -15px;
+  }
+
+  .leadership-sesction__main-right{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .leadership-sesction h3.leadership-sesction__title{
+    max-width: 320px;
+    margin-bottom: 12px;
+  }
+
+  .leadership-sesction .title__description{
+    margin-bottom: 24px;
+  }
+
+  .leadership-sesction .leadership__text{
+    max-width: 320px;
+    margin-bottom: 20px;
+  }
+
+  .leadership-sesction__social{
+    width: 30px;
+  }
+
+  .leadership-sesction{
+    margin-bottom: 140px;
+  }
+
+  .executives {
+    margin-bottom: 120px;
+    .company{
+      flex: 0 0 80%;
+      margin-right: 32px;
+    }
+  }
+
+  .directors {
+    margin-bottom: 70px;
+    .company{
+      flex: 0 0 40%;
+      margin-right: 32px;
+    }
+  }
+
+  .management {
+    margin-bottom: 70px;
+    .company{
+      flex: 0 0 40%;
+      margin-right: 32px;
+    }
+  }
+
+  .leadership-sesction .company__pic{
+    margin-bottom: 22px;
+  }
+
+  .leadership-sesction .company__description{
+    margin-bottom: 3px;
+    min-height: auto;
+    font-size: 14px;
+  }
+
+  .company__description.company__description--small{
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .leadership-sesction .company__text-block{
+    margin-bottom: 40px;
+  }
+
+  .leadership-sesction .leadership__social{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .executives{
+    .grey-title{
+      right: -10rem;
+      top: -14rem;
+    }
+    .grey-title__line{
+      bottom: auto;
+      right: 38px;
+      top: -190px;
+      width: 1px;
+    }
+  }
+
+  .leadership-sesction h3{
+    margin-bottom: 40px;
+  }
+
+  .executives .company__pic{
+    height: 197px;
+  }
+  
+  .directors{
+    .grey-title{
+      right: -10rem;
+      top: 0rem;
+    }
+    .grey-title__line{
+      bottom: auto;
+      right: 23px;
+      top: -68px;
+    }
+  }
+  
+  .management{
+    .grey-title{
+      right: -10rem;
+      top: 0rem;
+    }
+    .grey-title__line{
+      bottom: auto;
+      right: 23px;
+      top: -68px;
+    }
+  }
+
+  .leadership-sesction .company:after{
+    max-width: 134px;
+    height: 1px;
+  }
+
+  .leadership-sesction .company__text-block{
+    max-width: 210px;
+    margin-bottom: 15px;
+    min-height: 60px;
+    height: auto;
+  }
+
+  .company__description{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 3px;
+  }
+
+  .company__description.company__description--small{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .leadership-page{
+    .mailblock__circle-1{
+      top: -10rem;
+    }
+    .mailblock{
+      margin-bottom: 115px;
+    }
+  }
+
+  .leadership-sesction .company__pic{
+    height: 200px;
+  }
+
+  .management .company__pic{
+    min-height: auto;
+    height: 39vw;
+  }
+}

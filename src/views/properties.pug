@@ -1,0 +1,65 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'properties'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-black header-small")
+  +menu()
+  section.properties-main
+    .container
+      h1.properties-main__title.h1-title.parallax.p-0-1 Properties 
+      .properties-main__panel.--flex.--jcsb
+        .white-square
+        .properties-main__left
+          h3.properties-main__panel-title VIP <br>Hotel
+          .title__description.properties-main__description JMJ Properties
+          p.text.properties-main__text At Vip Hotel, we’re known for our fresh design, inspiring service and endless ability to intrigue guests with our distinctively local personality. 
+          .properties__stats.stats.--flex.--jcsb
+            .stats__item 
+              .stats__title Plot
+              .stats__info 23,5k m2
+            .stats__item 
+              .stats__title Year
+              .stats__info 2019
+            .stats__item 
+              .stats__title Location
+              .stats__info Doha, Qatar
+          +linkarrow('View Project')
+        .properties-main__right.--flex
+          .properties-main__pic.properties-main__pic--top
+            img(src="./assets/img/properties/1.png", alt="")
+          .properties-main__pic.properties-main__pic-small
+            img(src="./assets/img/properties/2.jpg", alt="")
+        .grey-title.parallax.p-3.--parrlax-mobile.grey-title--right
+          span 01
+        .grey-title__line
+      .properties-main__panel.--flex.--jcsb
+        .white-square
+        .properties-main__left
+          h3.properties-main__panel-title VIP <br>Hotel
+          .title__description.properties-main__description JMJ Properties
+          p.text.properties-main__text At Vip Hotel, we’re known for our fresh design, inspiring service and endless ability to intrigue guests with our distinctively local personality. 
+          .properties__stats.stats.--flex.--jcsb
+            .stats__item 
+              .stats__title Plot
+              .stats__info 23,5k m2
+            .stats__item 
+              .stats__title Year
+              .stats__info 2019
+            .stats__item 
+              .stats__title Location
+              .stats__info Doha, Qatar
+          +linkarrow('View Project')
+        .properties-main__right.--flex
+          .properties-main__pic.properties-main__pic--first.slide__video(data-fancybox href="https://www.youtube.com/watch?v=mEqcala-NiE")
+            img(src="./assets/img/properties/3.jpg", alt="")
+            .slide__play
+          .properties-main__pic
+            img(src="./assets/img/properties/4.jpg", alt="")
+        .grey-title.parallax.p-3.--parrlax-mobile.grey-title--right
+          span 02
+        .grey-title__line
+    .company__all.--flex.--jccn.--aicn
+      span Load More Projects
+      img(src="./assets/img/points.svg", alt="")

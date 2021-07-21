@@ -1,0 +1,238 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-white")
+  +menu()
+  section.main
+    .main__center
+      .container 
+        .main__wrap
+          .main__play(style="display: none;") 
+            +svgsprite('play')
+          .main__number.parallax.p-0-2 01
+          .main__text
+            h1.main__title.parallax.p-0-1 Achieving the <br>impossible
+            .main__description.parallax.p-0-2 Our vision
+    .main__socials
+      a.main__social(href="#") Instagram 
+      a.main__social(href="#") Facebook
+    .main__anchor
+    .main__video
+      video(src="./assets/img/video.mp4" autoplay muted) 
+    .main__next.parallax.p-0-2
+      .main__next-start
+        .main__next-number 02
+        .main__next-title Who we are
+        .main__next-description Meet our team
+      .main__next-arrow
+        +svgsprite('arrow-right')
+    a.main__down(href="#about")
+      .container
+        img(src="./assets/img/arrow-down.svg", alt="") 
+  section.about#about
+    .after
+    .container.--flex.--jcfe
+      .about__info.parallax.p-2 
+        h2.about__title We promote  <br>Businesses
+        h3.undertitle.about__undertitle Indulge in our premier class <br>Business Support Services
+        p.text Goal is to provide the best in class service to all of our clients and customers and ensure their needs are met in a timely and efficient manner. JMJ Group is committed to developing close relationships with all our business partners and we will be with you every step of the way, whatever your project or business venture.
+      .about__circle.about__circle--1.parallax.p-3.--parrlax-mobile
+      .about__circle.about__circle--2.parallax.p-3.--parrlax-mobile
+      .about__square.parallax.parallax.p-3.--parrlax-mobile
+      .about__line.about__line-1
+      .about__line.about__line-2
+      .about__line.about__line-3
+      .about__grey-title.grey-title.parallax.p-5.--parrlax-mobile
+        span client centered
+      .about__logo
+        img.parallax.p-1(src="./assets/img/indulge.svg", alt="")
+  section.focus 
+    .container 
+      h3.focus__title Industry Sectors
+      .title__description Occupational sector
+      p.medium-text With a diverse portfolio that includes but is not limited to: Real Estate, Manufacturing, Construction, Manpower, Event Management and Industrial Solutions, we are able to call upon a vast network of Industry Leaders and connections within the various Ministries to enable us to support your business. These relationships give us an enviable advantage in a very competitive market.
+      .focus__list.--flex.--jcsb 
+        .focus__item
+          .focus__item-pic
+            img(src="./assets/img/focus-i1.svg", alt="")
+          h4.focus__item-title Real Estate & <br>Hospitality
+          p.text.focus__item-text Offices, retail stores, hotels, and the like are allowing the local culture to influence the space throughout our companies.
+        .focus__item
+          .focus__item-pic
+            img(src="./assets/img/focus-i2.svg", alt="")
+          h4.focus__item-title Design, IT & <br>Consultancy
+          p.text.focus__item-text A new breed of leaders can help companies unleash the business value of design and IT solutions.
+        .focus__item
+          .focus__item-pic
+            img(src="./assets/img/focus-i3.svg", alt="")
+          h4.focus__item-title Manpower & <br>Development
+          p.text.focus__item-text Our companies provide dynamic and evolving methods widely used to improve the feasibility of each project.
+      +linkarrow('View Companies & Services')
+      .focus__line
+      .focus__grey-title.grey-title.parallax.p-1.--parrlax-mobile
+        span focus
+  section.properties
+    .after.parallax.p-4
+    .container.--flex.--jcsb
+      .properties__pics
+        .properties__pic-big.parallax.p-3
+          img(src="./assets/img/properties-1-1.png", alt="")
+        .properties__pic-small.parallax.p-1
+          img(src="./assets/img/properties-2-1.jpg", alt="")
+      .properties__info.parallax.p-2
+        h2 Al Mansour <br>Suites
+        .title__description JMJ Properties
+        p.medium-text We’ve opened our doors to an experience guests and locals call “fresh, welcoming, contemporary and surprisingly unexpected”. 
+        .properties__stats.stats.--flex.--jcsb
+          .stats__item 
+            .stats__title Plot
+            .stats__info 23,5k m2
+          .stats__item 
+            .stats__title Year
+            .stats__info 2019
+          .stats__item 
+            .stats__title Location
+            .stats__info Doha, Qatar
+        +linkarrow('All Properties')
+      .properties__line
+      .properties__line-2
+      .properties__grey-title.grey-title.parallax.p-5.--parrlax-mobile
+        span 01
+    .properties__grey-title-2.grey-title.parallax.p-5.--parrlax-mobile
+      span properties
+  section.heritage
+    .after
+    .container 
+      h2.heritage__title.parallax.p-3 Heritage & History
+      h2.heritage__number.parallax.p-3 2007
+      .heritage__info.parallax.p-2
+        h4.heritage__smalltitle Founded by Sheikh Jabor Bin Mansour Bin Jabor Bin Jassim Al Thani.
+        .heritage__text-block
+          p.text.heritage__text Founded in 2017 by Sheikh Jabor Bin Mansour Bin Jabor Al Thani, JMJ Group has grown quickly and sustainably. Representing over 40 diverse companies, the group promotes and ensures, ethical and compliant business operations in the State of Qatar. 
+          p.text.heritage__text The family of Sheikh Jabor has a rich heritage of investing in business ventures that contribute to the Qatar economy. Now based in the Iconic Marina Twin Towers in Lusail City, the Group looks to expand into an increasingly varied portfolio of business opportunities.
+        +linkarrow('Our Story of Success')
+      .heritage__grey-title.grey-title.parallax.p-5.--parrlax-mobile
+        span success
+      .heritage__line
+    .heritage__circle.parallax.p-4
+      img(src="./assets/img/heritage-circle.svg", alt="")
+  section.leadership
+    .container.--flex.--jcsb 
+      .leadership__photo 
+        img(src="./assets/img/leader.png", alt="")
+      .leadership__info
+        h3.leadership__title Leadership
+        .title__description.leadership__description Stack-holders
+        p.medium-text Led by the Chairman, Sheikh Jabor, the Group has appointed a number of senior executives who, collectively, have over 60 years’ experience in their fields of expertise 
+        h4 Meet the Executive team
+        .ladership__leaders
+          .ladership__leaders-item
+            p Sheikh Jabor Al Thani	
+            p Chairman and Founder
+          .ladership__leaders-item
+            p Kifah Balaawi
+            p Chief Operating Officer
+          .ladership__leaders-item
+            p Sameer Parkar	
+            p Chief Financial Officer
+          .ladership__leaders-item
+            p Issam Al Armouti	
+            p Economic and Financial Advisor
+          .ladership__leaders-item
+            p Andy Ryan	
+            p Head of Business Development
+          .ladership__leaders-item
+            p Ghada Chaccour	
+            p Head of Marketing
+          .ladership__leaders-item
+            p Arlene Ramos	
+            p PA to the Chairman
+        +linkarrow('Meet Stakeholders')
+      .leadership__circle-1.parallax.p-4.--parrlax-mobile
+      .leadership__circle-2.parallax.p-4.--parrlax-mobile
+  section.mailblock 
+    .container 
+      .darkblock 
+        h2.darkblock__title Want to become a partner?
+        a.mailblock__link(href="#") 
+          | Contact Us
+          img(src="./assets/img/icons/mail.svg", alt="")
+      .mailblock__circle-1.parallax.p-5.--parrlax-mobile
+      .mailblock__circle-2.parallax.p-5
+      .mailblock__circle-3.parallax.p-5.--parrlax-mobile
+      .mailblock__line
+  section.news
+    .container 
+      h3.news__title News & <br>Publications
+      .title__description.news__description Our honorable speakers in news papers
+      .news__wrap
+        .news__list.--flex.--jcsb
+          .news__square.parallax.p-2
+          .news__item.parallax.p-4 
+            .news__pic 
+              img(src="./assets/img/news-1.png", alt="")
+            h4.news__name JMJ Group of Companies
+            .news__stats.stats.--flex.--jcsb
+              .stats__item 
+                .stats__info 7 min read
+              .stats__item 
+                .stats__info Jan 29, 2021
+            p.text.news__text Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will…
+            +linkarrow('Read Full Article')
+          .news__item.parallax.p-4 
+            .news__pic 
+              img(src="./assets/img/news-2.png", alt="")
+            h4.news__name FIFA to trial <br>concussion subset…
+            .news__stats.stats.--flex.--jcsb
+              .stats__item 
+                .stats__info 7 min read
+              .stats__item 
+                .stats__info Jan 29, 2021
+            p.text.news__text Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will…
+            +linkarrow('Read Full Article')
+          .news__item.parallax.p-4 
+            .news__pic 
+              img(src="./assets/img/news-3.png", alt="")
+            h4.news__name Honorable <br>Mentions
+            .news__stats.stats.--flex.--jcsb
+              .stats__item 
+                .stats__info 7 min read
+              .stats__item 
+                .stats__info Jan 29, 2021
+            p.text.news__text Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will…
+            +linkarrow('Read Full Article')
+      .news__grey-title.grey-title.parallax.p-5.--parrlax-mobile
+        span news
+      .news__line
+  section.companies
+    .container 
+      h3.companies__title Our Companies
+      .companies__list-wrap
+        .swiper-container
+          .swiper-wrapper
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-1.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-2.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-3.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-4.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-5.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-1.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-2.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-3.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-4.png", alt="")
+            .companies__item.swiper-slide
+              img(src="./assets/img/companies/company-5.png", alt="")
+      .companies__link.--flex.--jcfe
+        +linkarrow('View All Companies')
+      .companies__line

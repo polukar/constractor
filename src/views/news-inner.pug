@@ -1,0 +1,58 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'news'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-white header-small")
+  +menu()
+  section.news-main.news-main--inner(style="background: url(./assets/img/news/news-bg.jpg) no-repeat center / cover")
+    .container 
+      .goback.parallax.p-0-2
+        +linkarrow-left-white('Go Back')
+      h1.news-main__title.parallax.p-0-1 FIFA to trial concussion substitutes at Club World Cup in Qatar
+      .news-main__date.--flex.--jcsb.parallax.p-0-2
+        .news__stats.stats.--flex.--jcsb
+          .stats__item 
+            .stats__info 7 min read
+          .stats__item 
+            .stats__info Jan 29, 202
+        .share Share
+  section.news-inner
+    .container
+      .news-inner__wrap
+        .news-inner__text
+          p FIFA will trial concussion substitutes at next month’s Club World Cup in Qatar, soccer’s world governing body said on Friday. The decision comes after the game’s rule-making body IFAB gave the go-ahead to additional trials last month. 
+          p The trial at the Club World Cup, which will be held from Feb. 1-11, will allow one permanent concussion replacement in cases of head injury, regardless of the number of substitutions a team has made already. England’s Premier League are hoping to introduce concussion substitutes later this month, while FIFA is also ready to trial the system at this year’s Olympic Games.
+        blockquote.blockquote.parallax.p-5
+          h3 A rule brought in to protect player welfare amid COVID-19 related fixture congestion
+        .news-inner__text
+          p FIFA  said teams participating in the Club World Cup are also permitted to make up to five substitutions per game rather than three — a rule brought in to protect player welfare amid COVID-19 related fixture congestion.
+          p However, teams will only have three opportunities to make changes during the game and also at halftime.
+          p FIFA will trial concussion substitutes at next month’s Club World Cup in Qatar, soccer’s world governing body said on Friday. The decision comes after the game’s rule-making body IFAB gave the go-ahead to additional trials last month.
+      .slider.parallax.p-5
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide.slide
+              a.slide__pic.slide__video(style="background: url(./assets/img/slider/slide.jpg) no-repeat center / cover" data-fancybox href="https://www.youtube.com/watch?v=mEqcala-NiE")
+                .slide__play
+              .slide__number 
+                span 01
+                .slide__number-description England’s Premier League are hoping to introduce concussion substitutes later this month.
+            .swiper-slide.slide
+              .slide__pic(style="background: url(./assets/img/slider/slide.jpg) no-repeat center / cover")
+              .slide__number 
+                span 02
+                .slide__number-description England’s Premier League are hoping to introduce concussion substitutes later this month.
+            .swiper-slide.slide
+              .slide__pic(style="background: url(./assets/img/slider/slide.jpg) no-repeat center / cover")
+              .slide__number 
+                span 03
+                .slide__number-description England’s Premier League are hoping to introduce concussion substitutes later this month.
+          .swiper-scrollbar
+      .news-inner__wrap
+        .news-inner__text
+          p The trial at the Club World Cup, which will be held from Feb. 1-11, will allow one permanent concussion replacement in cases of head injury, regardless of the number of substitutions a team has made already. England’s Premier League are hoping to introduce concussion substitutes later this month, while FIFA is also ready to trial the system at this year’s Olympic Games.
+        .news-inner__navigation.--flex.--jcsb
+          +linkarrow-left('Previous Article')
+          +linkarrow('Next Article')

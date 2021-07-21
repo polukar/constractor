@@ -1,0 +1,50 @@
+.btn {
+    $root: &;
+
+    display: inline-block;
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    @include transition((background-color, opacity));
+    background-color: $color-gray;
+    line-height: 3rem;
+
+    @include media-breakpoint-up(md) {
+        width: auto;
+    }
+
+    &:focus {
+        background-color: darken($color-gray, 20%);
+    }
+
+    &:disabled {
+        opacity: .7;
+        pointer-events: none;
+    }
+
+    &._primary,
+    &._secondary {
+        color: $color-white;
+    }
+
+    &._primary {
+        background-color: $color-primary;
+
+      
+
+        &:focus {
+            background-color: darken($color-primary, 20%);
+        }
+    }
+
+    &._secondary {
+        background-color: $color-secondary;
+
+   
+
+        &:focus {
+            background-color: darken($color-secondary, 20%);
+        }
+    }
+}

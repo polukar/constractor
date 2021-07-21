@@ -1,0 +1,78 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'properties'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-white header-small")
+  +menu()
+  section.properties-inner
+    .properties-inner__main(style="background: url(./assets/img/properties/bg.jpg) no-repeat center / cover")
+      .container
+        .properties-inner__main-wrap
+          .goback.parallax.p-0-2
+            +linkarrow-left-white('Go Back')
+          h1.properties-inner__title.parallax.p-0-1 VIP <br>Hotel 
+          .title__description.properties-inner__description.parallax.p-0-2 JMJ Properties
+    .properties-inner__content
+      .container
+        .properties-inner__wrap.--flex.--jcsb
+          .properties-inner__left
+            .properties-inner__overview
+              h4.properties-inner__small-title Overview
+              .properties__stats.stats.--flex.--jcsb
+                .stats__item 
+                  .stats__title Plot
+                  .stats__info 23,5k m2
+                .stats__item 
+                  .stats__title Year
+                  .stats__info 2019
+                .stats__item 
+                  .stats__title Location
+                  .stats__info Doha, Qatar
+          .properties-inner__right.properties-inner__right--contacts
+            .contacts__map
+              #map.map
+              .properties-inner__contacts
+                h4.properties-inner__small-title Commercial Leasing
+                .properties-inner__contacts-list.--flex
+                  .properties-inner__contact 3-(778)128-7060
+                  .properties-inner__contact example@jmj.qa
+          .properties-inner__left.properties-inner__left--minustop
+            h3.properties-inner__middle-title About
+            p.properties-inner__text.medium-text This Hotel provides paid lodging on a short-term basis. Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator and other kitchen facilities, upholstered chairs, a flat screen television, and en-suite bathrooms. 
+            .properties-inner__pic 
+              img(src="./assets/img/properties-text.png", alt="")
+          .properties-inner__right
+            p.properties-inner__text.medium-text.properties-inner__text--padding At Vip Hotel, we’re known for our fresh design, inspiring service and endless ability to intrigue guests with our distinctively local personality. We’ve opened our doors to an experience guests and locals call “fresh, welcoming, contemporary and surprisingly unexpected”. As you walk through the front doors, from the art on the walls to menus that infuse the taste that’s distinctive to our part of town, you can’t help but feel refreshed.
+      .grey-title.parallax.p-5.--parrlax-mobile.grey-title--right
+        span properties
+      .grey-title__line
+    .slider.parallax.p-5
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide.slide
+            a.slide__pic(style="background: url(./assets/img/slider/slide.jpg) no-repeat center / cover")
+              .slide__play
+            .slide__number 
+              span 01
+          .swiper-slide.slide
+            .slide__pic(style="background: url(./assets/img/slider/slide.jpg) no-repeat center / cover")
+            .slide__number 
+              span 02
+          .swiper-slide.slide
+            .slide__pic(style="background: url(./assets/img/slider/slide.jpg) no-repeat center / cover")
+            .slide__number 
+              span 03
+        .swiper-scrollbar
+    .properties-inner__content
+      .container
+        .properties-inner__wrap.--flex.--jcsb.properties-inner__wrap-pic
+          .properties-inner__left
+            p.properties-inner__text.medium-text JMJ’s operating system is made up of all the things we do to drive demand for our brands. Our operating system is made up of all the things we do to drive demand for our brands. This includes our advertising and marketing campaigns and global sales team of more than 17,600 professionals.
+            p.properties-inner__text.medium-text Welcome to our hotel!
+          .properties-inner__right.properties-inner__right-pic 
+            img(src="./assets/img/properties-text-2.png", alt="")
+        .properties-inner__navigation.--flex.--jcsb
+            +linkarrow-left('Previous Article')
+            +linkarrow('Next Article')

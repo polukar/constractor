@@ -1,0 +1,62 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'news'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-black header-small")
+  +menu()
+  section.news-section
+    .container
+      h1.news-section__title.h1-title News & <br>Publications
+    .container 
+      .news__all 
+        .news__panel.--flex.--jcsb
+          .news__left
+            h3.news__panel-title FIFA to trial concussion substitutes at Club World Cup in Qatar
+            .news__stats.stats.--flex.--jcsb
+              .stats__item 
+                .stats__info 7 min read
+              .stats__item 
+                .stats__info Jan 29, 2021
+            p.news__panel-text Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will be on acquisition and conversion instead of Churn. So not all businesses need to measure Churn. For businesses who do not have repeat purchase behaviour it might be…
+            p.news__panel-text Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will be on acquisition and conversion instead of Churn. So not all businesses need to measure Churn. For businesses who do not have repeat purchase behaviour it might be…
+            .news__btns.--flex.--jcsb 
+              a.link-arrow(href="news-inner.html") 
+                .link-arrow__text Read Full Article
+                .link-arrow__ico 
+                  img(src="./assets/img/arrow-right-dark.svg", alt="")
+              .share Share
+          .news__right(style="background: url(./assets/img/news/news-pic.jpg) no-repeat center / cover")
+        .news__panel.--flex.--jcsb
+          .news__left
+            h3.news__panel-title Defining Churn the right way
+            .news__stats.stats.--flex.--jcsb
+              .stats__item 
+                .stats__info 7 min read
+              .stats__item 
+                .stats__info Jan 29, 2021
+            p.news__panel-text Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will be on acquisition and conversion instead of Churn. So not all businesses need to measure Churn. For businesses who do not have repeat purchase behaviour it might be…
+            .news__btns.--flex.--jcsb 
+              a.link-arrow(href="news-inner.html") 
+                .link-arrow__text Read Full Article
+                .link-arrow__ico 
+                  img(src="./assets/img/arrow-right-dark.svg", alt="")
+              .share Share
+          .news__right(style="background: url(./assets/img/news/news-pic.jpg) no-repeat center / cover")
+        .news__panel.--flex.--jcsb
+          .news__left
+            h3.news__panel-title Defining Churn the right way
+            .news__stats.stats.--flex.--jcsb
+              .stats__item 
+                .stats__info 7 min read
+              .stats__item 
+                .stats__info Jan 29, 2021
+            p.news__panel-text Companies selling Furniture do not expect their users to buy Furniture again in the near future and therefore their focus will be on acquisition and conversion instead of Churn. So not all businesses need to measure Churn. For businesses who do not have repeat purchase behaviour it might be…
+            .news__btns.--flex.--jcsb 
+              +linkarrow('Read Full Article')
+              .share Share
+          .news__right(style="background: url(./assets/img/news/news-pic.jpg) no-repeat center / cover")
+      .company__all.--flex.--jccn.--aicn
+          span Load More Articles
+          img(src="./assets/img/points.svg", alt="")

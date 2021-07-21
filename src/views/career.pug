@@ -1,0 +1,198 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Career'
+  - var bodyClass = 'dev'
+block content
+  +header(class="header-black header-small")
+  +menu()
+  section.career
+    .container 
+      h1.h1-title.career__title Career
+      .career__main.--flex.--jcsb
+        .career__pic  
+          img(src="./assets/img/career-pic.jpg", alt="")
+        .career__info
+          h3.career__info-title Our Religion
+          .title__description.career__description What We Believe In
+          p.medium-text.career__info-text We hire only specific type of people who seek how to make difference to the world. These who deliver WOW through everyday work, are passionate about life, creative and adventures.
+          p.medium-text.career__info-text If you feel we are on the same page, welcome to try your chance to join our awesome team. 
+        .grey-title.parallax.p-5.--parrlax-mobile.grey-title--right
+          span opportunity
+        .grey-title__line
+      .vacancies
+        h3.vacancies__title Open Vacancies
+        p.vacancies__undertitle.title__description We Are Now Hiring
+        .accardeon
+          .accardeon__item 
+            .accardeon__main
+              .accardeon__main-number #1 
+              .accardeon__main-text Ui Designer (Middle)
+            .accardeon__down 
+              .accardeon__block 
+                .accardeon__description Description
+                p.accardeon__text As a UI Designer, you will be responsible for designing experiences (wireframes, pixel perfect designs, prototypes, etc.) in a cross functional team. You will work closely with the product team to create product designs, refine existing user experiences and launch new products.
+                p.accardeon__text You'll be a thought leader in modularizing our products and experiences to accommodate current and future needs. You must be responsive, flexible, and able to work in an open and collaborative environment.
+              .accardeon__block 
+                .accardeon__description Requirements
+                ul.accardeon__list
+                  li.accardeon__li.accardeon__text Experience working on complicated, technical products and an understanding of the challenges of making data-centric products beautiful and intuitive.
+                  li.accardeon__li.accardeon__text 4 years + of experience.
+              .next-step 
+                +linkarrow('Apply')
+              form.vacancies__form.hidden
+                .form__close
+                h3.vacancies__form-title Send Us Your CV
+                .form__group.--flex.--jcsb 
+                  fieldset.form__block.form__block--50
+                    p.form__description First Name*
+                    input.input(type="text" placeholder="Diana Jordan")
+                    .input-error
+                  fieldset.form__block.form__block--50
+                    p.form__description Second Name*
+                    input.input(type="text" placeholder="Diana Jordan")
+                    .input-error
+                  fieldset.form__block
+                    p.form__description Attach Cover Letter*
+                    label.file
+                      input(type="file" placeholder="txt, doc, docx, pages, pdf")
+                      .file__btn 
+                        .file__btn-text txt, doc, docx, pages, pdf
+                        .file__btn-size 2 mb
+                        .file__btn-plus
+                    .input-error
+                  fieldset.form__block
+                    p.form__description Portfolio*
+                    label.file
+                      input(type="file" placeholder="pdf only")
+                      .file__btn
+                        .file__btn-text pdf only
+                        .file__btn-size 5 mb
+                        .file__btn-plus
+                    .input-error
+                  fieldset.form__block
+                    .vacancies__submit 
+                      button Apply
+                    .vacancies__submit-description 
+                      | By submitting, you are agreeing to our 
+                      a(href="#") Terms & Conditions
+              .vacancies__succes-message.hidden
+                h3.vacancies__succes-title You successfully submitted your CV.
+                .title__description.vacancies__succes-description Our Human Resources department will email you shortly.
+                .vacancies__succes-pic 
+                  img(src="./assets/img/form-black-check.svg", alt="")
+          .accardeon__item 
+            .accardeon__main
+              .accardeon__main-number #2 
+              .accardeon__main-text Ruby on Rails Developer (Senior)
+            .accardeon__down 
+              .accardeon__block 
+                .accardeon__description Description
+                p.accardeon__text As a UI Designer, you will be responsible for designing experiences (wireframes, pixel perfect designs, prototypes, etc.) in a cross functional team. You will work closely with the product team to create product designs, refine existing user experiences and launch new products.
+                p.accardeon__text You'll be a thought leader in modularizing our products and experiences to accommodate current and future needs. You must be responsive, flexible, and able to work in an open and collaborative environment.
+              .accardeon__block 
+                .accardeon__description Requirements
+                ul.accardeon__list
+                  li.accardeon__li.accardeon__text Experience working on complicated, technical products and an understanding of the challenges of making data-centric products beautiful and intuitive.
+                  li.accardeon__li.accardeon__text 4 years + of experience.
+              .next-step 
+                +linkarrow('Apply')
+              form.vacancies__form.hidden
+                .form__close
+                h3.vacancies__form-title Send Us Your CV
+                .form__group.--flex.--jcsb 
+                  fieldset.form__block.form__block--50
+                    p.form__description First Name*
+                    input.input(type="text" placeholder="Diana Jordan")
+                    .input-error
+                  fieldset.form__block.form__block--50
+                    p.form__description Second Name*
+                    input.input(type="text" placeholder="Diana Jordan")
+                    .input-error
+                  fieldset.form__block
+                    p.form__description Attach Cover Letter*
+                    label.file
+                      input(type="file" placeholder="txt, doc, docx, pages, pdf")
+                      .file__btn 
+                        .file__btn-text txt, doc, docx, pages, pdf
+                        .file__btn-size 2 mb
+                        .file__btn-plus
+                    .input-error
+                  fieldset.form__block
+                    p.form__description Portfolio*
+                    label.file
+                      input(type="file" placeholder="pdf only")
+                      .file__btn
+                        .file__btn-text pdf only
+                        .file__btn-size 5 mb
+                        .file__btn-plus
+                    .input-error
+                  fieldset.form__block
+                    .vacancies__submit 
+                      button Apply
+                    .vacancies__submit-description 
+                      | By submitting, you are agreeing to our 
+                      a(href="#") Terms & Conditions
+              .vacancies__succes-message.hidden
+                h3.vacancies__succes-title You successfully submitted your CV.
+                .title__description.vacancies__succes-description Our Human Resources department will email you shortly.
+                .vacancies__succes-pic 
+                  img(src="./assets/img/form-black-check.svg", alt="")
+          .accardeon__item 
+            .accardeon__main
+              .accardeon__main-number #3 
+              .accardeon__main-text Java Developer (Senior)
+            .accardeon__down 
+              .accardeon__block 
+                .accardeon__description Description
+                p.accardeon__text As a UI Designer, you will be responsible for designing experiences (wireframes, pixel perfect designs, prototypes, etc.) in a cross functional team. You will work closely with the product team to create product designs, refine existing user experiences and launch new products.
+                p.accardeon__text You'll be a thought leader in modularizing our products and experiences to accommodate current and future needs. You must be responsive, flexible, and able to work in an open and collaborative environment.
+              .accardeon__block 
+                .accardeon__description Requirements
+                ul.accardeon__list
+                  li.accardeon__li.accardeon__text Experience working on complicated, technical products and an understanding of the challenges of making data-centric products beautiful and intuitive.
+                  li.accardeon__li.accardeon__text 4 years + of experience.
+              .next-step 
+                +linkarrow('Apply')
+              form.vacancies__form.hidden
+                .form__close
+                h3.vacancies__form-title Send Us Your CV
+                .form__group.--flex.--jcsb 
+                  fieldset.form__block.form__block--50
+                    p.form__description First Name*
+                    input.input(type="text" placeholder="Diana Jordan")
+                    .input-error
+                  fieldset.form__block.form__block--50
+                    p.form__description Second Name*
+                    input.input(type="text" placeholder="Diana Jordan")
+                    .input-error
+                  fieldset.form__block
+                    p.form__description Attach Cover Letter*
+                    label.file
+                      input(type="file" placeholder="txt, doc, docx, pages, pdf")
+                      .file__btn 
+                        .file__btn-text txt, doc, docx, pages, pdf
+                        .file__btn-size 2 mb
+                        .file__btn-plus
+                    .input-error
+                  fieldset.form__block
+                    p.form__description Portfolio*
+                    label.file
+                      input(type="file" placeholder="pdf only")
+                      .file__btn
+                        .file__btn-text pdf only
+                        .file__btn-size 5 mb
+                        .file__btn-plus
+                    .input-error
+                  fieldset.form__block
+                    .vacancies__submit 
+                      button Apply
+                    .vacancies__submit-description 
+                      | By submitting, you are agreeing to our 
+                      a(href="#") Terms & Conditions
+              .vacancies__succes-message.hidden
+                h3.vacancies__succes-title You successfully submitted your CV.
+                .title__description.vacancies__succes-description Our Human Resources department will email you shortly.
+                .vacancies__succes-pic 
+                  img(src="./assets/img/form-black-check.svg", alt="")
+      include _includes/blocks/subscribe
